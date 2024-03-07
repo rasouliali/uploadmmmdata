@@ -1,0 +1,228 @@
+/*
+ * Style for spesati template product page.
+ */
+
+/* Product page */
+section.first > div.colLeft > div#sliderContainer {
+    width: 33%;
+    display: inline-block;
+}
+
+section.first > div.colLeft > div#sliderContainer div.gallery {
+    position: relative;
+}
+
+section.first > div.colLeft > div#sliderContainer div.stickers {
+    position: absolute;
+    bottom: 25%;
+    left: 2%;
+    width: 96%;
+}
+
+section.first > div.colLeft > div#sliderContainer div.stickers img {
+    margin-left: 2%;
+    width: 13%;
+}
+
+section.first > div.colLeft > div#sliderContainer div.gallery ul#lightSlider {
+    height: 20em;
+}
+
+section.first > div.colLeft > div#sliderContainer div.gallery ul#lightSlider li {
+   	width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section.first > div.colLeft > div#sliderContainer div.gallery ul.lSPager {
+    height: 6em;
+}
+
+section.first > div.colLeft > div#sliderContainer div.gallery ul.lSPager li {
+    width: 31%!important;
+    height: 100%!important;
+    background-size: cover!important;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+}/*
+.right{
+    text-align:right;
+}
+.t-left{
+    text-align:left;
+}*/
+section.first > div.colLeft > div.left {
+    width: 62%;
+}
+#sliderContainer > .gallery{
+    max-height:50vh;
+    direction:ltr;
+}
+section.first > div.colLeft > div.left > * {
+    margin-bottom: 1em;
+    width:100%;
+}
+
+section.first > div.colLeft > div.left > div#product {
+    width: 100%;
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+section.first > div.colLeft > div.left > div#product div.left {
+    width: 55%;
+    margin-left: 5%;
+    margin-bottom: 1em;
+}
+
+section.first > div.colLeft > div.left > div#product div.left {
+    width: 40%;
+    text-align: left;
+    margin: 2em 0;
+}
+
+section.first > div.colLeft > div.left div#product div.left h1 {
+    font-size: 1.5em;
+    margin: .5em 0;
+}
+
+section.first > div.colLeft > div.left div#product div.left p#shortDesc, section.first > div.colLeft > div.left div#product div.left p.price {
+    font-size: 1.6em;
+}
+
+section.first > div.colLeft > div.left div#product div.left p.red {
+    text-decoration: line-through;
+}
+
+section.first > div.colLeft > div.left div#addToCart {
+    margin-bottom: 2em;
+    overflow: hidden;
+}
+
+section.first > div.colLeft > div.left div#addToCart > input {
+    width: 70%;
+    line-height: 2.9em;
+    padding-left: 1em;
+}
+
+section.first > div.colLeft > div.left div#addToCart div {
+    width: 22%;
+    float: left;
+}
+
+section.first > div.colLeft > div.left div#addToCart .button {
+    width: 100%;
+    padding: .8em 0;
+}
+
+section.first > div.colLeft > div.left div#addToCart div span {
+    text-align: center;
+    float: left;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+section.first > div.colLeft > div.left div#addToCart div input {
+    width: 30%;
+    float: left;
+    font-size: 1em;
+    height: 1.83em;
+    margin: 0 7%;
+    text-align: center;
+}
+
+section.first > div.colLeft > div.left div#description {
+    margin-bottom: 2em;
+}
+
+section.first > div.colLeft > div.left div#description h5 {
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+section.first > div.colLeft > div.left div#description ul {
+    list-style-type: disc;
+    padding-left: 2em; 
+}
+
+section.first > div.colLeft > div.left > div#socialSharing {
+    width: 100%;
+    text-align: left;
+}
+
+section.first > div.colLeft > div.left > div#socialSharing > * {
+    display: inline-block;
+    margin-left: 0.8em;
+}
+
+section.first > div.colLeft > div.left > div#socialSharing > a#email {
+    margin-left: inherit;
+}
+
+div.previewProducts {
+    width: 100%;
+    display: inline-block;
+    margin-top: 2em;
+}
+
+/* Mobile version */
+@media screen and (max-width: 800px) {
+
+    /* Products style */
+    div.containerProduct > div.left.prod5,
+    div.containerProduct > div.left.prod6 {
+        display: none;
+    }
+
+    section.first > div.colLeft > div.left div#addToCart div {
+        width: 28%;
+    }
+}
+
+/* Mobile version */
+@media screen and (max-width: 600px) {
+
+    /* Products style */
+    div.containerProduct > div.left.prod5 {
+        display: none;
+    }
+}
+
+/* Mobile version */
+@media screen and (max-width: 500px) {
+
+    section.first > div.colLeft > div#sliderContainer, section.first > div.colLeft > div.left {
+        width: 100%;
+        float: none;
+    }
+
+    section.first > div.colLeft > div.left > div#product div.left, section.first > div.colLeft > div.left > div#product div.right {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+
+    section.first > div.colLeft > div.left > div#product div.right, section.first > div.colLeft > div.left div#product div.right p.red {
+        text-align: center;
+    }
+
+    section.first > div.colLeft > div.left div#addToCart div input {
+        height: 2em;
+    }
+
+    section.first > div.colLeft > div.left div#addToCart div {
+        width: 9em;
+        float: none;
+        margin: 0 auto;
+    }
+
+    section.first > div.colLeft > div.left > div#socialSharing, div.previewProducts {
+        display: none;
+    }
+
+    section.first > div.colLeft > a.button {
+        margin-bottom: 4em;
+    }
+}

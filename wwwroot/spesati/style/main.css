@@ -417,7 +417,7 @@ div#header header > div.colLeft > div div.right .cart p {
     position: absolute;
     top: 0.2em;
     line-height: 1em;
-    left: 1.2em;
+    right: 1.2em;
     color: #FFFFFF;
 }
 
