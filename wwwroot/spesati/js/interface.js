@@ -32,19 +32,6 @@ $(document).ready(function() {
     if(window.track !== undefined) {
         data = window.track;
     }
-	data={
-    "guest": true,
-    "total": 0,
-    "netTotal": 0,
-    "products": [],
-    "visited": false,
-    "mailchimp_id": false,
-    "total_discounted": 0,
-    "discount_data": null,
-    "establishment": "Olbia",
-    "address": null,
-    "courrier": true
-};
      $.ajax({
          type: "GET",
          beforeSend: function(request) {
@@ -54,6 +41,22 @@ $(document).ready(function() {
          url: "/Home/GetNow?id=0",
          success: function (resdata) {
              var jData = JSON.parse(resdata);
+             if (jData.status || jData.Status) {
+
+                 jData= {
+                     "guest": false,
+                     "total": 0,
+                     "netTotal": 0,
+                     "products": [],
+                     "visited": false,
+                     "mailchimp_id": false,
+                     "total_discounted": 0,
+                     "discount_data": null,
+                     "establishment": "Olbia",
+                     "address": null,
+                     "courrier": true
+                 };
+             }
              updateCartInterface(jData);
              updateUserInterface(jData);
              updateEstablishmentInterface(jData);
@@ -825,6 +828,9 @@ function alterProduct(id, q) {
         success: function (resdata) {
             var jdata = JSON.parse(resdata);
 
+            if (jData.status || jData.Status) {
+                return;
+            }
             headerCartSlider(jdata);
             updateCartInterface(jdata);
             voucherApply(jdata);
@@ -1234,25 +1240,26 @@ function updateUserInterface(cart) {
 
         $('.log-out').click(function(e) {
             e.preventDefault();
-            $(this).prop('disabled', true);
+            $('#frm-sign-out').submit();
+            //$(this).prop('disabled', true);
 
-            if (parseInt($('#cartQuantity').text()) != 0) {
-                var text = $('#js-texts input[name=save_cart_notice]').val();
-                var title = $('#js-texts input[name=save_cart_notice_title]').val();
+            //if (parseInt($('#cartQuantity').text()) != 0) {
+            //    var text = $('#js-texts input[name=save_cart_notice]').val();
+            //    var title = $('#js-texts input[name=save_cart_notice_title]').val();
 
-                doModal(title, text, [{
-                        label: $('#js-texts input[name=save_cart_ok]').val(),
-                        callback: function() {
-                            saveCart().then(doLogout);
-                        },
-                    }, {
-                        label: $('#js-texts input[name=save_cart_ko]').val(),
-                        callback: doLogout,
-                    }
-                ]);
-            } else {
-                doLogout();
-            }
+            //    doModal(title, text, [{
+            //            label: $('#js-texts input[name=save_cart_ok]').val(),
+            //            callback: function() {
+            //                saveCart().then(doLogout);
+            //            },
+            //        }, {
+            //            label: $('#js-texts input[name=save_cart_ko]').val(),
+            //            callback: doLogout,
+            //        }
+            //    ]);
+            //} else {
+            //    doLogout();
+            //}
         });
     }
 }
