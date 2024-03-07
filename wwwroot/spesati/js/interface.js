@@ -1063,26 +1063,26 @@ function updateCartInterface(cart) {
             when it is in hover, not only the cart main button
         */
 
-        $('#shipping-cart-button').hover(function() {
-            options.css('display', 'block');
+        //$('#shipping-cart-button').hover(function() {
+        //    options.css('display', 'block');
 
-            const button = document.querySelector('#shipping-cart-button');
-            const tooltip = document.querySelector('#shipping-cart-options');
+        //    const button = document.querySelector('#shipping-cart-button');
+        //    const tooltip = document.querySelector('#shipping-cart-options');
 
-            FloatingUIDOM.computePosition(button, tooltip, {
-                placement: 'bottom',
-            }).then(({
-                x,
-                y
-            }) => {
-                Object.assign(tooltip.style, {
-                    left: `${x}px`,
-                    top: `${y}px`,
-                });
-            });
-        }, function() {
-            delayedCloseCartOptions();
-        });
+        //    FloatingUIDOM.computePosition(button, tooltip, {
+        //        placement: 'bottom',
+        //    }).then(({
+        //        x,
+        //        y
+        //    }) => {
+        //        Object.assign(tooltip.style, {
+        //            left: `${x}px`,
+        //            top: `${y}px`,
+        //        });
+        //    });
+        //}, function() {
+        //    delayedCloseCartOptions();
+        //});
 
         $('#shipping-cart-options').hover(function() {
             $(this).css('display', 'block');

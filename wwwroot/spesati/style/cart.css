@@ -1,0 +1,204 @@
+/*
+ * Style for spesati template cart page.
+ */
+
+/* Cart page */
+section.first {
+    margin-bottom: 4em;
+}
+
+section.first > div.colLeft > table#cart {
+    margin-bottom: 2em;
+}
+
+section.first > div.colLeft > table#cart th {
+    text-transform: uppercase;
+}
+
+section.first > div.colLeft > table#cart tr {
+    border-bottom: 2px solid #F3F3F4;
+}
+
+section.first > div.colLeft > table#cart td {
+    vertical-align: middle;
+    padding: 1em 2em;
+}
+
+section.first > div.colLeft > table#cart td.image div{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 5em;
+    height: 5em;
+}
+
+section.first > div.colLeft > table#cart tr td span {
+    text-align: center;
+}
+
+section.first > div.colLeft > table#cart tr td span.cross {
+    color: #FFFFFF;
+    border-radius: 50%;
+    font-size: .7em;
+}
+
+table#cart tr td.add {
+    width: 22%;
+}
+/*
+section.first > div.colLeft > table#cart tr td span.minus, section.first > div.colLeft > table#cart tr td span.plus {
+    background-color: #666666;
+    color: #FFFFFF;
+    width: 20%;
+    line-height: 2em;
+    padding: 3px;
+}
+
+section.first > div.colLeft > table#cart tr td.add div {
+    display: inline-block;
+    width: 100%;
+    height: 2em;
+}
+
+section.first > div.colLeft > table#cart tr td.add div > * {
+    display: inline-block;
+    float: left;
+    height: 100%;
+}*/
+
+section.first > div.colLeft > table#cart tr td.add span {
+    font-size: 1em;
+    cursor: pointer;
+}
+
+section.first > div.colLeft > table#cart tr td input.number {
+    width: 25%;
+    text-align: center;
+    font-size: .8em;
+    height: 1.8em;
+}
+
+section.first > div.colLeft > table#cart tr td.description h3 {
+    font-size: .9em;
+}
+
+section.first > div.colLeft > table#cart tr td.description p, section.first > div.colLeft > table#cart tr td.code, section.first > div.colLeft > table#cart tr td p.origPrice {
+    font-size: .8em;
+}
+
+section.first > div.colLeft > table#cart tr td p.origPrice {
+    text-decoration: line-through;
+    text-align: right;
+}
+
+section.first > div.colLeft > div.total > input, section.first > div.colLeft > div.total > p {
+    display: inline-block;
+    float: left;
+}
+
+table#cart tr td.price {
+    width: 13%;
+    text-align: right;
+}
+
+section.first > div.colLeft > div.total > input {
+    width: 35%;
+    height: 11em;
+    margin-right: 6%;
+}
+
+section.first > div.colLeft > div.total > div {
+    width: 100%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+section.first > div.colLeft > div.total > div p {
+    font-size: 1.7em;
+    margin-bottom: 2.4em;
+}
+
+/* Mobile version */
+@media screen and (max-width: 500px) {
+
+    section.first > div.colLeft > table#cart tr th {
+        display: none;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+        float: left;
+    }
+
+    section.first > div.colLeft > table#cart tr {
+        padding: 1em 0;
+    }
+
+    section.first > div.colLeft > table#cart td {
+        padding: 0;
+    }
+
+    section.first > div.colLeft > table#cart td.remove, section.first > div.colLeft > table#cart td.add, section.first > div.colLeft > table#cart td.image {
+        height: 5em;
+        padding-bottom: 1em;
+    }
+
+    section.first > div.colLeft > table#cart td.remove {
+        width: 10%;
+        text-align: center;
+    }
+
+    section.first > div.colLeft > table#cart td.remove span {
+        margin-top: 2em;
+    }
+
+    section.first > div.colLeft > table#cart td.add {
+        width: 66%;
+        text-align: center;
+    }
+
+    section.first > div.colLeft > table#cart td.add div {
+        padding-top: 1.5em;
+    }
+
+    section.first > div.colLeft > table#cart td.image {
+        width: 24%;
+        float: right;
+    }
+
+    section.first > div.colLeft > table#cart td.image div {
+        float: right;
+    }
+
+    section.first > div.colLeft > table#cart td.description {
+        width: 40%;
+        margin-right: 5%;
+    }
+
+    section.first > div.colLeft > table#cart td.code {
+        width: 30%;
+    }
+
+    section.first > div.colLeft > table#cart td.price {
+        width: 25%;
+    }
+
+    section.first > div.colLeft > table#cart tr td.description h3 {
+        line-height: 1.3em;
+    }
+
+    section.first > div.colLeft > div.total > input {
+        width: 98%;
+        height: 4em;
+        margin-bottom: 2em;
+    }
+}
+
+/* Mobile version */
+@media screen and (max-width: 800px) {
+
+    /* Cart style */
+    section.first > div.colLeft > table#cart tr td.description p.productDescription {
+        display: none;
+    }
+}
