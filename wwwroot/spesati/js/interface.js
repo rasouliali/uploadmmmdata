@@ -826,14 +826,14 @@ function alterProduct(id, q) {
         url: '/Home/GetNow?id=' + id + '&lang=tr&adet=' + q,
         data: JSON.stringify(data),
         success: function (resdata) {
-            var jdata = JSON.parse(resdata);
+            var jData = JSON.parse(resdata);
 
             if (jData.status || jData.Status) {
                 return;
             }
-            headerCartSlider(jdata);
-            updateCartInterface(jdata);
-            voucherApply(jdata);
+            headerCartSlider(jData);
+            updateCartInterface(jData);
+            voucherApply(jData);
         }
     });
 }
