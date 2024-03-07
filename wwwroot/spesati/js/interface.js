@@ -1235,8 +1235,8 @@ function closeModal() {
  */
 function updateUserInterface(cart) {
     if(!cart.guest) {
-        $('.log-in, .sign-up').hide();
-        $('.log-out, .profile').css("display", "inline-block");
+        //$('.log-in, .sign-up').hide();
+        //$('.log-out, .profile').css("display", "inline-block");
 
         $('.log-out').click(function(e) {
             e.preventDefault();
