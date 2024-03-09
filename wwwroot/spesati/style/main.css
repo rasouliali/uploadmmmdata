@@ -15,7 +15,9 @@ body, html {
     font-family: 'Iranian Sans','Montserrat', Sans-serif;
     color: #000000;
 }
-
+ul#lightSlider > li > img{
+    width:100%;
+}
 header, section, footer {
     width: 96%;
     max-width: 1366px;
