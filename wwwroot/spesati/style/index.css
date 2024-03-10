@@ -108,7 +108,7 @@ section.previewProducts {
     margin-bottom: 5em;
 }
 
-div.containerProduct > div.left {
+div.containerProduct > div.right {
     width: 11%;
     margin-right: 1.6%;
     padding-right: 1.6%;

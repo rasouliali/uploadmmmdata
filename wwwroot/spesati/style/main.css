@@ -223,7 +223,7 @@ div#header header a#logo {
 }
 
 div#header header a#logo h2 {
-    font-size: 1em;
+    font-size: 1.5em;
     width: 80%;
     display: block;
 }
@@ -753,7 +753,7 @@ div.containerProduct > div::after {
     width: 2px;
 }
 
-div.containerProduct > a.right {
+div.containerProduct > a.left {
     position: relative;
     color: #000000;
     height: 21em;
@@ -1146,13 +1146,13 @@ div.footer {
 .footer > div.bgDarkGrey {
     width: 40%;
     float: left;
-    height: 40em;
+    height: 36em;
 }
 
 .footer > div.bgRed {
     width: 60%;
     float: right;
-    height: 40em;
+    height: 36em;
 }
 
 footer {
@@ -1160,7 +1160,7 @@ footer {
     left: 0;
     right: 0;
     margin: auto;
-    height: 40em;
+    height: 36em;
 }
 
 footer h3 {
@@ -1180,7 +1180,7 @@ footer > * {
 
 footer > div.left {
     width: 16%;
-    padding: 4.5em 2% 6.5em 1%;
+    padding: 4.5em 2% 4.5em 1%;
 }
 
 footer > div.center {
