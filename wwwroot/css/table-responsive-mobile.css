@@ -1,0 +1,50 @@
+﻿/*
+	Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
+	*/
+@media only screen and (max-width: 760px){
+
+    /* Force table to not be like tables anymore */
+    table:not(.no-res-mob), table:not(.no-res-mob) thead, table:not(.no-res-mob) tbody, table:not(.no-res-mob) th, table:not(.no-res-mob) td, table:not(.no-res-mob) tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    table:not(.no-res-mob) thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    table:not(.no-res-mob) tr {
+        margin: 0 0 1rem 0;
+    }
+
+    table:not(.no-res-mob) tr:nth-child(odd) {
+        background: #ccc;
+    }
+
+    table:not(.no-res-mob) td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+        table:not(.no-res-mob) td:before {
+            display: block;
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 0;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+}
+@media only screen and (min-width: 760px) {
+    table:not(.no-res-mob) td:before {
+        display: none;
+    }
+}

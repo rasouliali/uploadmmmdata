@@ -1076,7 +1076,13 @@ form fieldset div#submitAddAddress input.modifyAddress {
     display: none;
 }
 
-form fieldset > div > p {
+form fieldset div.w-100 {
+    width:100% !important;
+}
+.d-none{
+    display:none;
+}
+form fieldset div > p {
     width: 26%;
     font-size: .9em;
     line-height: 1.2em;
@@ -1084,9 +1090,31 @@ form fieldset > div > p {
     text-align: right;
 }
 
+form fieldset div > input[type='text'], form fieldset div > input[type='password'] {
+    width: 65%;
+    height: 2em;
+    font-size: 1em;
+    padding: 0.1em 1%;
+    background-color: #FFFFFF;
+}
+
+form fieldset > div > p {
+    width: 26%;
+    font-size: .9em;
+    line-height: 1.2em;
+    margin-left: 5%;
+    text-align: right;
+}
 form fieldset > div > input[type='text'], form fieldset > div > input[type='password'] {
     width: 65%;
     height: 2em;
+    font-size: 1em;
+    padding: 0.1em 1%;
+    background-color: #FFFFFF;
+}
+form fieldset > div > textarea {
+    width: 100%;
+    height: auto;
     font-size: 1em;
     padding: 0.1em 1%;
     background-color: #FFFFFF;
@@ -1119,7 +1147,7 @@ form fieldset div select {
     -webkit-padding-end: 20px;
     -webkit-padding-start: 2px;
     -webkit-user-select: none;
-    background-image: url('//cdn.spesati.com/images/layout/arrow-select.png');
+    background-image: url('/spesati/images/arrow-select.png');
     background-size: 1em;
     background-repeat: no-repeat;
     border: 1px solid #8C8C8C;
@@ -1131,7 +1159,7 @@ form fieldset div select {
 
 form fieldset > div > select {
     width: 67%;
-    background-position: 96% center;
+    background-position: 4% center;
 }
 
 form fieldset > div > div select {

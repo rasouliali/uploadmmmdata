@@ -1332,7 +1332,7 @@ function isNumber(evt) {
  * Modify height of header and create chart slider in header.
  */
 function headerCartSlider(cart) {
-    if(cart.total == 0) {
+    if (cart.total == 0 || $('body').hasClass('poff')) {
         $('#header header').removeClass('productOn');
         $('.first').removeClass('productOn');
         $('#previewCart > i').removeClass('darkerGrey');

@@ -36,6 +36,12 @@ section.first > div.colLeft > div#sliderContainer div.gallery ul#lightSlider li 
     background-repeat: no-repeat;
 }
 
+section.first > div.colLeft > div#sliderContainer div.gallery ul#lightSlider li > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 section.first > div.colLeft > div#sliderContainer div.gallery ul.lSPager {
     height: 6em;
 }

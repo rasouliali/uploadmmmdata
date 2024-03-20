@@ -1,0 +1,604 @@
+/*
+ * Style for spesati template checkout page.
+ */
+
+/* Colors */
+.bgLightYellow {
+    background-color: #FEF3CE;
+}
+
+.bgDarkYellow {
+    background-color: #C1AA61;
+}
+
+/* Header style */
+div#header header.productOn {
+    height: 9em!important;
+}
+
+section.productOn, div.productOn {
+    padding-top: 8.3em!important;
+}
+
+/* Breadcrumb style */
+div#breadcrumb {
+    margin: 2em 0;
+    overflow: hidden;
+}
+
+div#breadcrumb a {
+    width: 96%;
+    padding: .4em 2%;
+    display: inline-block;
+    text-transform: uppercase;
+    height: 2em;
+    float: right;
+    margin: .1em 0;
+}
+
+div#breadcrumb a > * {
+    display: inline-block;
+}
+
+div#breadcrumb a span {
+    font-size: 2em;
+    width: 17%;
+    line-height: 1em;
+}
+
+div#breadcrumb a p {
+    width: 80%;
+    line-height: 1em;
+}
+
+/* Radio button style */
+label.block {
+    width: 16%;
+    float: right;
+    margin-left: 1%;
+    font-size: 1.3em;
+    padding: .5em 1em;
+    font-weight: bold;
+    color: #008040;
+    border: 1px solid #008040;
+    text-align: center;
+}
+
+label.box {
+    margin: 0%;
+    color: #008040;
+    text-align: center;
+}
+
+label.box:hover, label.box.selected, label.block:hover, label.block.selected {
+    background-color: #008040;
+    color: #FFFFFF;
+}
+
+label.box.disabled, label.box.disabled:hover {
+    color: #F3F3F4;
+    background-color: transparent;
+}
+
+/* Buttons */
+.nextCheckoutStep, .stepBack {
+    cursor: pointer;
+}
+
+.stepBack:hover {
+    background-color: #008040;
+}
+
+.selectAddress {
+    display: inherit;
+}
+
+.selectAddressOff {
+    display: none;
+}
+
+#paypal-button {
+    float: left;
+}
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    margin-bottom: 1em;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: .2em;
+    width: .2em;
+    background-color: #FFFFFF;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #008040;
+}
+
+.disabled.container:hover input ~ .checkmark {
+    background-color: #FFFFFF;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #008040;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+section.first div.colleft {
+    margin: 2em 0;
+}
+
+section.first div.colleft h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+div.continue {
+    display: inline-block;
+    width: 100%;
+}
+
+div.continue.upper {
+    padding-bottom: 2em;
+}
+
+div.continue.lower {
+    padding-bottom: 6em;
+}
+
+/* First step style */
+div#firstStep > div {
+    border-bottom: 1px solid #F3F3F4;
+    overflow: hidden;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+
+div#firstStep div div.address {
+    width: 19%;
+    padding: 2%;
+    margin: 1%;
+    float: right;
+    display: block;
+    height: 15em;
+    position: relative;
+}
+
+div#firstStep div div.address.bgLightYellow.selected {
+    background-color: #008040;
+}
+
+div#firstStep div div.address h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+div#firstStep div div.address p {
+    font-size: .9em;
+    line-height: 1.4em;
+}
+
+div#firstStep div div.address p.phone {
+    margin-top: 1em;
+}
+
+div#firstStep div div.address a {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+}
+
+ul.list > li > div {
+    width: 90%;
+    margin-right: 5%;
+}
+
+section.first form fieldset div {
+    width: 48%;
+    margin-bottom: .5em;
+}
+
+section.first form fieldset div.right {
+    margin-left: 4%;
+}
+
+section.first form fieldset div > * {
+    float: right;
+}
+
+section.first form fieldset input[type="submit"] {
+    margin-top: 1em;
+}
+
+/* Second step style */
+div#secondStep h3 {
+    text-align: center;
+    margin-bottom: .5em;
+    font-size: 1.2em;
+}
+
+div#secondStep h2.right, div#secondStep div div#datePick {
+    margin-left: 10%;
+}
+
+div#secondStep div {
+    display: inline-block;
+    width: 100%;
+}
+
+div#secondStep form#checkoutDayTimeForm label {
+    display: block;
+}
+
+div#secondStep form#checkoutDayTimeForm label p {
+    margin-bottom: 1em;
+    font-size: .7em;
+}
+
+div#secondStep form#checkoutDayTimeForm label#freeShipLabel p a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* Radio button style */
+div#secondStep div label.block {
+    width: 35%;
+}
+
+div#secondStep div div {
+    width: 45%;
+    float: right;
+    margin-bottom: 2em;
+}
+
+div#secondStep div div table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+div#secondStep div div table tr th, div#secondStep div div table tr td {
+    width: 14%;
+    border: 1px solid;
+    line-height: 3em;
+}
+
+div#secondStep div#shipping {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 2em;
+}
+
+/* Third step style */
+div#thirdStep > div {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    overflow: hidden;
+    border-bottom: 1px solid #F3F3F4;
+}
+
+div#thirdStep div label.block {
+    width: 31%;
+    margin: 1%;
+    padding: .7em 0;
+    font-size: 1.1em;
+}
+
+div#thirdStep div div.invoice {
+    width: 19%;
+    padding: 2%;
+    margin: 1%;
+    float: right;
+    display: block;
+    height: 15em;
+    position: relative;
+}
+
+div#thirdStep div div.invoice h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+div#thirdStep div div.invoice p {
+    font-size: .9em;
+    line-height: 1.4em;
+}
+
+div#thirdStep div div.invoice p.phone {
+    margin-top: 1em;
+}
+
+div#thirdStep div div.invoice a {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+}
+
+/* Fourth step style */
+div#fourthStep > div {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 2em;
+}
+
+div#fourthStep > div div {
+    width: 45%;
+}
+
+div#fourthStep > div div div {
+    border-bottom: 1px solid #000000;
+    width: 100%;
+    margin-bottom: 1em;
+    padding-bottom: .4em;
+}
+
+div#fourthStep > div div div.lastRow {
+    border-bottom: none;
+}
+
+div#fourthStep > div div div.lastRow a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+div#fourthStep > div div div.lastRow a:hover {
+    color: #FF4D4D;
+}
+
+div#fourthStep > div div.right div h5 {
+    font-weight: bold;
+}
+
+div#fourthStep > div div.right form#deleteDiscount {
+    margin-bottom: 1em;
+}
+
+div#fourthStep > div div.right input[name="promoCode"] {
+    width: 60%;
+    height: 2em;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+div#fourthStep > div div.right textarea {
+    width: 100%;
+    height: 9em;
+    font-size: 1em;
+    padding-top: .5em;
+    margin-bottom: .5em;
+}
+
+div#fourthStep > div div h4 {
+    font-size: 1.1em;
+    width: 49%;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+div#fourthStep > div div h4.left {
+    text-align: left;
+}
+
+div#fourthStep ul.list li table {
+    width: 100%;
+}
+
+div#fourthStep ul.list li table tr {
+    height: 3em;
+}
+
+div#fourthStep ul.list li table th {
+    font-size: .9em;
+}
+
+div#fourthStep ul.list li table tr#total td {
+    padding-top: 2em;
+}
+
+div#fourthStep ul.list li table th#nameProd {
+    width: 45%;
+}
+
+/* Mobile version */
+@media screen and (max-width: 1080px) {
+
+    /* Header style */
+    div#header header.productOn {
+        height: 7em!important;
+    }
+
+    section.productOn, div.productOn {
+        padding-top: 7.5em!important;
+    }
+}
+
+/* Mobile version */
+@media screen and (max-width: 800px) {
+
+    /* Header style */
+    div#header header.productOn {
+        height: 8em!important;
+    }
+
+    section.productOn, div.productOn {
+        padding-top: 8.5em!important;
+    }
+
+    /* Fourth step style */
+    div#fourthStep > div div.right input[name="promoCode"] {
+        width: 100%;
+    }
+
+    div#fourthStep > div div.right .button {
+        float: none;
+        margin-bottom: 1em;
+    }
+}
+
+/* Mobile version */
+@media screen and (max-width: 500px) {
+
+    /* Header style */
+    div#header header.productOn {
+        height: 5em!important;
+    }
+
+    section.productOn, div.productOn {
+        padding-top: 6.5em!important;
+    }
+
+    /* Radio button style */
+    label.block, div#thirdStep div label.block {
+        width: 70%;
+        float: none;
+        margin: .5em auto;
+    }
+
+    .container:hover input ~ .checkmark {
+        background-color: #FFFFFF;
+    }
+
+    .container.selected:hover input ~ .checkmark {
+        background-color: #008040;
+    }
+
+    label.box:hover, label.block:hover {
+        background-color: inherit;
+        color: #008040;
+    }
+
+    label.box.selected:hover, label.block.selected:hover {
+        background-color: #008040;
+        color: #FFFFFF;
+    }
+
+    /* Breadcrumb style */
+    div#breadcrumb {
+        margin: 0;
+    }
+
+    div#breadcrumb a {
+        height: 1.4em;
+    }
+
+    div#breadcrumb a span {
+        font-size: 1.5em;
+    }
+
+    /* Form style */
+    section.first form fieldset div {
+        width: 100%;
+    }
+
+    form fieldset > div > select {
+        width: 63%;
+    }
+
+    /* Form style */
+    form fieldset div {
+        width: 100%;
+    }
+
+    /* First step */
+    div#firstStep div div.address {
+        width: 44%;
+        margin: 1%;
+    }
+    
+    /* Second step */
+    div#secondStep div div, div#secondStep h2.right, div#secondStep div div#datePick {
+        width: 100%;
+        margin: 0 0 1em 0;
+    }
+
+    /* third step */
+    div#thirdStep div div.invoice {
+        width: 44%;
+        margin: 1%;
+    }
+
+    /* Fourth step */
+    div#fourthStep > div div {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    div#fourthStep table tr th {
+        display: none;
+    }
+
+    div#fourthStep ul.list li table tr {
+        height: inherit;
+        border-bottom: 1px solid #8C8C8C;
+        margin-bottom: 1em;
+        padding-bottom: 1em;
+        width: 100%;
+        display: inline-block;
+    }
+
+    div#fourthStep table tr td {
+        width: 100%;
+        line-height: 2em;
+        display: inline-block;
+    }
+
+    div#fourthStep table tr td p.mobile {
+        font-weight: bold;
+        width: 40%;
+        float: right;
+        font-size: .9em;
+    }
+
+    div#fourthStep table tr td p.value {
+        width: 55%;
+        float: right;
+        text-align: left;
+    }
+
+    div#fourthStep table tr td.none {
+        display: none;
+    }
+
+    div#fourthStep table tr td.col {
+        width: 50%;
+        float: right;
+        text-align: left;
+    }
+
+    div#fourthStep > div div.right textarea, div#fourthStep > div div.right input[name="promoCode"] {
+        width: 98%;
+    }
+}
