@@ -3,11 +3,15 @@
  */
 
 /* Main layout */
+
 @font-face {
     font-family: 'Iranian Sans';
     src: url('/fonts/iran_sans.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
 }
 body, html {
     font-size: 16px;
@@ -360,7 +364,7 @@ div form#search fieldset > div > * {
 form#search fieldset > div input#searchBox {
     border-left: none;
     width: 80%;
-    background-image: url('//cdn.spesati.com/images/layout/lente.png');
+    background-image: url('/spesati/images/lente.png');
     background-position: .5em .6em;
     background-repeat: no-repeat;
     background-size: 1.1em;
@@ -1075,9 +1079,26 @@ form fieldset div#submitAddAddress > * {
 form fieldset div#submitAddAddress input.modifyAddress {
     display: none;
 }
-
+table.table-border th {
+    border: 1px solid black;
+}
+table.table-border td {
+    border: 1px solid black;
+}
 form fieldset div.w-100 {
     width:100% !important;
+}
+.w-100 {
+    width:100% !important;
+}
+.w-50 {
+    width: 50% !important;
+}
+.w-48 {
+    width: 48% !important;
+}
+.w-43 {
+    width: 43% !important;
 }
 .d-none{
     display:none;
@@ -1499,7 +1520,7 @@ footer > div.right > div > a.bgYellow {
     }
 
     div#header header > div.colLeft > div div.right div#dropdown::before {
-        left: 10em;
+        right: 10em;
     }
 
     div#header header > div.colLeft > div#previewCart {
@@ -1742,10 +1763,11 @@ footer > div.right > div > a.bgYellow {
         margin-top: .5em;
     }
 
-    div#header header > div.colLeft > div div.right div#dropdown {
-        top: 5em;
-        left: -0.7em;
-    }
+        div#header header > div.colLeft > div div.right div#dropdown {
+            top: 5em;
+            right: -0.7em;
+            left: auto;
+        }
 
     div#header header > div.colLeft > div form#search {
         width: 98%;

@@ -212,6 +212,21 @@ $(document).ready(function() {
             $(this).next().css("display", "none");
         }
     });
+    $(".expand").click(function(e) {
+        e.preventDefault();
+
+        $(this).toggleClass('open close');
+        $(this).children('i').toggleClass('fa-angle-down fa-angle-up');
+        $(this).next().toggle();
+        if ($(this).hasClass("open")) {
+            $(this).next().css("display", "inline-block");
+            $('html, body').animate({
+                scrollTop: $(this).next().offset().top - 250
+            }, 'slow');
+        } else {
+            $(this).next().css("display", "none");
+        }
+    });
 
     /*
      * Delete customer address.
