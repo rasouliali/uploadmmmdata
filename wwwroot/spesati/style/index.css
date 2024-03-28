@@ -12,7 +12,7 @@ div.first {
 
 section#head {
     position: relative;
-    background-image: url('../../cdn.spesati.com/images/slider/back-slider.png');
+    background-image: url('/spesati/images/slider/back-slider.png');
 }
 
 section#head #buttonDesktop {
