@@ -8,6 +8,35 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+.smallmap {
+    width: 100% !important;
+    height: 256px;
+    border: 1px solid #ccc;
+}
+
+.dir-ltr {
+    direction: ltr
+}
+
+@media only screen and (max-width: 600px) {
+    #map {
+        background: #7391ad;
+        width: 100%;
+    }
+
+    #map {
+        border: 0;
+        height: 250px;
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 600px) {
+
+    #map {
+        width: 70%;
+    }
+}
 #StartStoreM {
     width: 60px;
     height: 60px;
