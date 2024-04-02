@@ -1109,7 +1109,7 @@ function updateCartInterface(cart) {
     }
 
     var q = 0;
-    $("#cartTotal, #cartTotalCheckout").html("تومان" + cart.total);
+    $("#cartTotal, #cartTotalCheckout").html(cart.total.toLocaleString() + "تومان");
     for (var id in cart.products) {
         $(".product[data-id='" + id + "']").find('.button').replaceWith(
             generateProductButtons(cart.products[id].quantity)

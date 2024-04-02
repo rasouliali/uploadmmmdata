@@ -10,8 +10,23 @@
     font-weight: normal;
     font-style: normal;
 }
-
-
+.t-center{
+    text-align:center;
+}
+.mx-auto {
+    margin-right: auto;
+    margin-left: auto;
+}
+.current-amount-data {
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 100px;
+    padding-top: 41px;
+    padding-bottom: 41px;
+    text-align: center;
+}
 .smallmap {
     width: 100% !important;
     height: 256px;
