@@ -1222,8 +1222,14 @@ form fieldset div select {
 }
 
 form fieldset > div > select {
-    width: 63%;
+    width: 62%;
     background-position: 4% center;
+}
+@media screen and (max-width: 500px) {
+    form fieldset > div > select {
+        width: 57%;
+        background-position: 4% center;
+    }
 }
 
 form fieldset > div > div select {
@@ -2044,8 +2050,8 @@ footer > div.right > div > a.bgYellow {
 
     div.containerProduct > div.left > div {
         width: 61%;
-        margin-right: 5%;
-        float: left;
+        margin-right: 4%;
+        float: right;
     }
 
     div.containerProduct > div.left > div h4 {

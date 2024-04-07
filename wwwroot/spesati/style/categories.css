@@ -1,0 +1,232 @@
+/*
+ * Style for spesati template categories page.
+ */
+
+/* Categories page */
+section.first > div {
+    margin-bottom: 2em;
+}
+
+div.title {
+    margin-bottom: 4em;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
+div.title.mobile {
+    display: none;
+}
+
+div.title > h2 {
+    font-size: 1.5em;
+}
+
+section.first > div.containerCategories div a.left {
+    position: relative;
+    width: 23%;
+    height: 14em;
+    color: #000000;
+    text-align: center;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    margin-bottom: 3em;
+    margin-right: 1%;
+    padding-right: 1%;
+}
+
+section.first > div.containerCategories div a.left::after {
+    background: -webkit-linear-gradient(#FFFFFF, #CCCCCC, #FFFFFF);
+    background: linear-gradient(#FFFFFF, #CCCCCC, #FFFFFF);
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2px;
+}
+
+section.first > div.containerCategories div a > div {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 37% 0;
+    margin-bottom: 1em;
+}
+
+div.hover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+}
+
+div.containerCategories div > a:hover div.hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+div.containerCategories div a:hover h3 {
+    color: #FF0000;
+}
+
+/* Subcategory page */
+section.first > div.containerProduct {
+    width: 76%;
+}
+
+section.first div.breadcrumb > * {
+    display: inline;
+}
+
+section.first div.breadcrumb > div {
+    float: right;
+    width: 30%;
+}
+
+section.first div.breadcrumb > div > * {
+    display: inline;
+}
+
+section.first div.breadcrumb > div > select {
+    width: 60%;
+    font-size: .7em;
+    -webkit-appearance: button;
+    -webkit-border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -webkit-user-select: none;
+    background-image: url('//cdn.spesati.com/images/layout/arrow-select.png');
+    background-position: 94% center;
+    background-repeat: no-repeat;
+    border: 1px solid #8C8C8C;
+    color: #555;
+    overflow: hidden;
+    padding: 6px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 1em;
+}
+
+/* Mobile version */
+@media screen and (max-width: 800px) {
+
+    /* Breadcrumb style */
+    section.first div.breadcrumb > div {
+        width: 40%;
+    }
+
+    /* Categories style */
+    section.first > div.containerCategories div a.left {
+        width: 31%;
+    }
+}
+
+/* Mobile version */
+@media screen and (max-width: 500px) {
+
+    /* Categories page */
+    section.first {
+        width: 100%;
+    }
+
+    section.first > div.containerCategories {
+        background-color: #F3F3F4;
+        margin-bottom: 0;
+        padding-bottom: 4em;
+    }
+
+    section.first > div.containerCategories > div {
+        overflow: hidden;
+    }
+
+    div.title {
+        background-color: #FFCC33;
+        width: 100%;
+        padding: 1em 0;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    div.title > * {
+        display: inline;
+    }
+
+    div.title > h2 {
+        font-size: 1.1em;
+    }
+
+    div.title > a {
+        margin-right: 2em;
+        position: absolute;
+        left: 1em;
+        top: 0.1em;
+    }
+
+    section.first > div.containerCategories div a.left {
+        width: 95%;
+        margin: .2em 2.5%;
+        height: inherit;
+        background-color: #FFFFFF;
+    }
+
+    section.first > div.containerCategories div a.left:first-of-type {
+        margin-top: 2em;
+    }
+
+    section.first > div.containerCategories div a.left:last-of-type {
+        margin-bottom: 3em;
+    }
+
+    section.first > div.containerCategories div a > * {
+        float: left;
+    }
+
+    section.first > div.containerCategories div a > div {
+        padding: 9% 0;
+        width: 16%;
+        margin-bottom: 0;
+        background-position: right;
+    }
+
+    section.first > div.containerCategories div a > h3 {
+        line-height: 4.6em;
+        margin-left: 1em;
+        text-transform: uppercase;
+        font-size: .9em;
+    }
+
+    section.first > div.containerCategories div a.left::after {
+        display: none;
+    }
+
+    section.first > div.containerCategories > a.button {
+        width: 70%;
+        margin: 2em auto;
+    }
+
+    /* Internal page */
+    /* Breadcrumb different style */
+    div.title.mobile {
+        display: inline-block;
+    }
+
+    div.breadcrumb.internal {
+        display: inline-block;
+        width: 100%;
+    }
+
+    div.breadcrumb.internal > p {
+        display: none;
+    }
+
+    section.first div.breadcrumb.internal > div {
+        float: none;
+        width: 100%;
+    }
+}
