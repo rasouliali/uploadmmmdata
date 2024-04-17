@@ -835,6 +835,8 @@ div.containerProduct > div > a {
 
 div.containerProduct > div > div {
     padding: 0 3px;
+    margin-left: -50px;
+    margin-right: -15px;
 }
 div.containerProduct > div > a > div {
     position: relative;
