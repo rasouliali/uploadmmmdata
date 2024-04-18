@@ -86,7 +86,7 @@ class signalRListener {
         }
     };
 
-    InvokeProcess(invokeEnum, guid, sendIndex, par1, par2, par3, par4, par5, par6) {
+    InvokeProcess(invokeEnum, guid, sendIndex, par1, par2, par3, par4, par5, par6, par7) {
 
         if (sendIndex == 1 || sendIndex == 2 || sendIndex == 3 || sendIndex == 4) {
             if (
@@ -96,7 +96,7 @@ class signalRListener {
                 var tmpsendIndex = sendIndex + 1;
 
                 setTimeout(function () {
-                        signalRListenerThis.InvokeProcess(invokeEnum, guid, tmpsendIndex, par1, par2, par3, par4, par5, par6);
+                        signalRListenerThis.InvokeProcess(invokeEnum, guid, tmpsendIndex, par1, par2, par3, par4, par5, par6, par7);
                 }, 3000);
             }
         }
@@ -108,7 +108,8 @@ class signalRListener {
                 var cityId = par4;
                 var Address = par5;
                 var LatLon = par6;
-                this.wsconn.invoke("SendCart", guid, userId, CartData, proviceid, cityId, Address, LatLon);//.catch(err => console.log(err));
+                var fazid = par7;
+                this.wsconn.invoke("SendCart", guid, userId, CartData, proviceid, cityId, fazid, Address, LatLon);//.catch(err => console.log(err));
                 // code block
                 break;
             case InvokeSender.AcceptCart:
