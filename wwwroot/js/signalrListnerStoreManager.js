@@ -13,7 +13,7 @@
             window.location.href = "/StoreManagerCart";
         });
     });
-    mySignalRListener.wsconn.on('RecieveCartInStoreManager', (uniqueId, userId, connectionId, CartData, Address, LatLon, cartStr) => {
+    mySignalRListener.wsconn.on('RecieveCartInStoreManager', (uniqueId, userId, connectionId, CartData, fazid, Address, LatLon, cartStr) => {
         CheckDuplicateInLockBlock(uniqueId).then(function (res) {
             if (!res)
                 return;
@@ -40,7 +40,7 @@
                 if (e) {
                     signalRListenerThis.InvokeProcess(InvokeSender.AcceptCart, uniqueId, 1, userId, connectionId)
                 }
-            }).set({ title: Address }).set('closable', false).set('labels', { ok: 'قبول میکنم', cancel: 'رد شود' });
+            }).set({ title: 'فاز ' + fazid+", "+ Address }).set('closable', false).set('labels', { ok: 'قبول میکنم', cancel: 'رد شود' });
         });
 
     });
