@@ -867,8 +867,8 @@ div.containerProduct > div > a div p.bgRed {
 div.containerProduct > div > a div p.bgRed::before {
     content: "";
     position: absolute;
-    left: 0;
-    border-left: .7em solid #FFFFFF;
+    right: 0;
+    border-right: .7em solid #FFFFFF;
     border-top: .75em solid #FF4D4D;
     border-bottom: .75em solid #FF4D4D;
     background-color: #FFFFFF;

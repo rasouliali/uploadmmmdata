@@ -21,7 +21,9 @@ div.title.mobile {
 div.title > h2 {
     font-size: 1.5em;
 }
-
+div.containerProduct > div > div {
+    margin-right: 5px !important;
+}
 section.first > div.containerCategories div a.left {
     position: relative;
     width: 23%;
