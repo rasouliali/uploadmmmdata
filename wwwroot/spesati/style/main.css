@@ -711,7 +711,7 @@ div#menuCategories > ul > li.open ul {
     background-color: rgba(243, 242, 242, .95);
     width: 100%;
     z-index: 14;
-    height: 94%;
+    height: 94vh;
     padding: 1em 2em;
     border: 1px solid #CCCCCC;
     border-right: 0;
@@ -1562,9 +1562,11 @@ footer > div.right > div > a.bgYellow {
         color: #FF0000;
     }
 
-    div#header header > div.colLeft > div div.right a.account i {
-        line-height: 0.95em;
-    }
+        div#header header > div.colLeft > div div.right a.account i {
+            line-height: 0.95em;
+            margin-top: -10px;
+            font-size: 27px;
+        }
 
     div#header header > div.colLeft > div div.right div#dropdown {
         top: 3.7em;

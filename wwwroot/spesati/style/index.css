@@ -251,16 +251,18 @@ div#previewOthCategories section a div.container h3 {
        float: left;
     }
 
-    div#previewCategories section > a div.bg {
-        padding: 9% 0;
-        width: 21%;
-    }
+        div#previewCategories section > a div.bg {
+            padding: 9% 0;
+            width: 21%;
+            float: right;
+        }
 
     div#previewCategories section > a h3 {
         line-height: 4em;
         margin-left: 1em;
         text-transform: uppercase;
         color: #000000;
+        float:right;
     }
 
     div#previewCategories section > a:hover div.cover {

@@ -833,24 +833,29 @@ function alterProduct(id, q) {
         id: parseInt(id),
         q: parseInt(q)
     }
-    $.ajax({
-        type: "POST",
-        beforeSend: function(request) {
-            request.setRequestHeader("Accept", "application/json");
-        },
-        url: '/Home/GetNow?id=' + id + '&lang=tr&adet=' + q,
-        data: JSON.stringify(data),
-        success: function (resdata) {
-            var jData = JSON.parse(resdata);
+    if (userAuthorized) {
 
-            if (jData.status || jData.Status) {
-                return;
+        $.ajax({
+            type: "POST",
+            beforeSend: function (request) {
+                request.setRequestHeader("Accept", "application/json");
+            },
+            url: '/Home/GetNow?id=' + id + '&lang=tr&adet=' + q,
+            data: JSON.stringify(data),
+            success: function (resdata) {
+                var jData = JSON.parse(resdata);
+
+                if (jData.status || jData.Status) {
+                    return;
+                }
+                headerCartSlider(jData);
+                updateCartInterface(jData);
+                voucherApply(jData);
             }
-            headerCartSlider(jData);
-            updateCartInterface(jData);
-            voucherApply(jData);
-        }
-    });
+        });
+    } else {
+        window.location.href = "/login";
+    }
 }
 
 async function saveCart() {
