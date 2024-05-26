@@ -3,7 +3,9 @@
  */
 
 /* Main layout */
-
+.text-danger{
+    color:red;
+}
 @font-face {
     font-family: 'Iranian Sans';
     src: url('/fonts/iran_sans.ttf') format('truetype');
