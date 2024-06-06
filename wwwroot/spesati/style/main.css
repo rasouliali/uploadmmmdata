@@ -6,6 +6,11 @@
 .text-danger{
     color:red;
 }
+.enamad-logo{
+    position:fixed;
+    bottom:50px;
+    left:20px;
+}
 @font-face {
     font-family: 'Iranian Sans';
     src: url('/fonts/iran_sans.ttf') format('truetype');
