@@ -774,7 +774,10 @@ div#breadcrumb.admin-menu a {
     font-size: 1.5em;
     margin: 0 auto 2em auto;
 }
-
+.mobile div.containerProduct {
+    display: inline-block;
+    width: 93%;
+}
 div.containerProduct {
     display: inline-block;
     width: 100%;
