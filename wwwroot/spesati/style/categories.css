@@ -24,7 +24,7 @@ div.title > h2 {
 div.containerProduct > div > div {
     margin-right: 5px !important;
 }
-section.first > div.containerCategories div a.left {
+section.first div.containerCategories div a.left {
     position: relative;
     width: 23%;
     height: 14em;
@@ -37,7 +37,7 @@ section.first > div.containerCategories div a.left {
     padding-right: 1%;
 }
 
-section.first > div.containerCategories div a.left::after {
+section.first div.containerCategories div a.left::after {
     background: -webkit-linear-gradient(#FFFFFF, #CCCCCC, #FFFFFF);
     background: linear-gradient(#FFFFFF, #CCCCCC, #FFFFFF);
     content: "";
@@ -49,7 +49,7 @@ section.first > div.containerCategories div a.left::after {
     width: 2px;
 }
 
-section.first > div.containerCategories div a > div {
+section.first div.containerCategories div a > div {
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -123,7 +123,7 @@ section.first div.breadcrumb > div > select {
     }
 
     /* Categories style */
-    section.first > div.containerCategories div a.left {
+    section.first  div.containerCategories div a.left {
         width: 31%;
     }
 }
@@ -136,13 +136,13 @@ section.first div.breadcrumb > div > select {
         width: 100%;
     }
 
-    section.first > div.containerCategories {
+    section.first div.containerCategories {
         background-color: #F3F3F4;
         margin-bottom: 0;
         padding-bottom: 4em;
     }
 
-    section.first > div.containerCategories > div {
+    section.first div.containerCategories > div {
         overflow: hidden;
     }
 
@@ -170,44 +170,44 @@ section.first div.breadcrumb > div > select {
         top: 0.1em;
     }
 
-    section.first > div.containerCategories div a.left {
+    section.first div.containerCategories div a.left {
         width: 95%;
         margin: .2em 2.5%;
         height: inherit;
         background-color: #FFFFFF;
     }
 
-    section.first > div.containerCategories div a.left:first-of-type {
+    section.first div.containerCategories div a.left:first-of-type {
         margin-top: 2em;
     }
 
-    section.first > div.containerCategories div a.left:last-of-type {
+    section.first div.containerCategories div a.left:last-of-type {
         margin-bottom: 3em;
     }
 
-    section.first > div.containerCategories div a > * {
+    section.first div.containerCategories div a > * {
         float: left;
     }
 
-    section.first > div.containerCategories div a > div {
+    section.first div.containerCategories div a > div {
         padding: 9% 0;
         width: 16%;
         margin-bottom: 0;
         background-position: right;
     }
 
-    section.first > div.containerCategories div a > h3 {
+    section.first div.containerCategories div a > h3 {
         line-height: 4.6em;
         margin-left: 1em;
         text-transform: uppercase;
         font-size: .9em;
     }
 
-    section.first > div.containerCategories div a.left::after {
+    section.first div.containerCategories div a.left::after {
         display: none;
     }
 
-    section.first > div.containerCategories > a.button {
+    section.first div.containerCategories > a.button {
         width: 70%;
         margin: 2em auto;
     }
