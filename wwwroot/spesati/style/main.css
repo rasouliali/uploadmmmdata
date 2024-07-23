@@ -31,29 +31,62 @@
     background-color:lightcoral;
     color:white;
 }
+@keyframes openFilterBox {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 235px;
+    }
+}
+@keyframes closeFilterBox {
+    0% {
+        width: 235px;
+    }
+
+    100% {
+        width: 0;
+    }
+}
 @media only screen and (max-width: 599px) {
     .btncontainerSubCategory {
         position: fixed;
         top: 165px;
         overflow: auto;
         left: 0px;
-        z-index: 10;
+        z-index: 99;
         background: white;
     }
     .containerSubCategory.active {
+        background-color: #FFCC33;
         position: fixed;
         bottom: 0;
-        top: 200px;
+        top: 0;
         overflow: auto;
-        right: 50px;
-        left: 50px;
+        right: 0px;
         width: 235px;
-        z-index: 10;
-        background: white;
+        z-index: 99;
         display: block;
-    }    
+        animation-name: openFilterBox;
+        animation-duration: 1s;
+    }
     .containerSubCategory {
-        display:none;
+        background-color: #FFCC33;
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        overflow: auto;
+        right: 0px;
+        width: 0;
+        z-index: 99;
+        display: block;
+        animation-name: closeFilterBox;
+        animation-duration: 1s;
+    }
+    .containerSubCategory label {
+        width: 200px;
+        display: block;
     }
 }
 @media only screen and (min-width: 600px) {
