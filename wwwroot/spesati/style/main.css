@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Main style for spesati template.
  */
 
@@ -10,6 +10,12 @@
     position:fixed;
     bottom:50px;
     left:20px;
+}
+.btncontainerSubCategory button::after{
+    content:'فیلتر'
+}
+.btncontainerSubCategory button.active::after {
+    content: '×'
 }
 @font-face {
     font-family: 'Iranian Sans';
@@ -28,7 +34,7 @@
 @media only screen and (max-width: 599px) {
     .btncontainerSubCategory {
         position: fixed;
-        top: 100px;
+        top: 165px;
         overflow: auto;
         left: 0px;
         z-index: 10;
