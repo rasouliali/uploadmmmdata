@@ -37,12 +37,12 @@
     }
 
     100% {
-        width: 235px;
+        width: 100vw;
     }
 }
 @keyframes closeFilterBox {
     0% {
-        width: 235px;
+        width: 100vw;
     }
 
     100% {
@@ -55,8 +55,15 @@
         top: 165px;
         overflow: auto;
         left: 0px;
-        z-index: 99;
+        z-index: 100;
         background: white;
+        font-size:larger;
+    }
+    .containerSubCategory > div {
+        height: 100vh;
+        display: table-cell;
+        vertical-align: middle;
+        font-size: large;
     }
     .containerSubCategory.active {
         background-color: #FFCC33;
@@ -65,7 +72,7 @@
         top: 0;
         overflow: auto;
         right: 0px;
-        width: 235px;
+        width: 100vw;
         z-index: 99;
         display: block;
         animation-name: openFilterBox;
@@ -84,10 +91,10 @@
         animation-name: closeFilterBox;
         animation-duration: 1s;
     }
-    .containerSubCategory label {
-        width: 200px;
-        display: block;
-    }
+        .containerSubCategory label {
+            width: 100vw;
+            display: block;
+        }
 }
 @media only screen and (min-width: 600px) {
     .btncontainerSubCategory {
@@ -99,7 +106,7 @@
         max-height: 30vh;
         overflow: auto;
         right: 76px;
-        width: 235px;
+        width: 100vw;
         z-index: 10;
         background: white;
     }
