@@ -69,8 +69,16 @@ div.hover {
 div.containerCategories div > a:hover div.hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
-
-
+.bootstrap-select.show-tick .dropdown-menu li a span.text {
+    text-align: right;
+    width: 100%;
+}
+:not(.input-group) > .bootstrap-select.form-control:not([class*=col-]) {
+    width: 70%;
+}
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner{
+    text-align:right;
+}
 div.containerCategories div a:hover h3 {
     color: #FF0000;
 }
@@ -81,16 +89,23 @@ section.first > div.containerProduct {
 }
 
 section.first div.breadcrumb > * {
-    display: inline;
+    display: inline-block;
 }
 
 section.first div.breadcrumb > div {
-    float: right;
+    float: left;
     width: 30%;
 }
 
-section.first div.breadcrumb > div > * {
-    display: inline;
+    section.first div.breadcrumb > div > * {
+        display: inline-block;
+    }
+section.first div.breadcrumb .btn-group {
+    width: 100%;
+    height: 30px;
+}
+section.first div.breadcrumb .multiselect-native-select {
+    width: 200px;
 }
 
 section.first div.breadcrumb > div > select {
@@ -102,8 +117,8 @@ section.first div.breadcrumb > div > select {
     -webkit-padding-end: 20px;
     -webkit-padding-start: 2px;
     -webkit-user-select: none;
-    background-image: url('//cdn.spesati.com/images/layout/arrow-select.png');
-    background-position: 94% center;
+    background-image: url('/spesati/images/arrow-select.png');
+    background-position: 6% center;
     background-repeat: no-repeat;
     border: 1px solid #8C8C8C;
     color: #555;
