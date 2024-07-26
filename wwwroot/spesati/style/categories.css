@@ -78,7 +78,7 @@ div.containerCategories div > a:hover div.hover {
 }
 .bootstrap-select .dropdown-toggle .filter-option-inner-inner{
     text-align:right;
-    font-size:9px;
+    /*font-size:9px;*/
 }
 .dropdown-menu.show {
     border-color: transparent !important;
