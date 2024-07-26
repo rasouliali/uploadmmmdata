@@ -79,6 +79,29 @@ div.containerCategories div > a:hover div.hover {
 .bootstrap-select .dropdown-toggle .filter-option-inner-inner{
     text-align:right;
 }
+.dropdown-menu.show {
+    border-color: transparent !important;
+    background-color: transparent !important;
+}
+.bootstrap-select .dropdown-menu li {
+    background-color: white;
+    z-index:1001;
+}
+ul.dropdown-menu.inner.show li:first-child {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+ul.dropdown-menu.inner.show li:last-child {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.dropdown-menu.show > .inner.show {
+    display: table-cell;
+    vertical-align: middle;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden auto;
+}
 div.containerCategories div a:hover h3 {
     color: #FF0000;
 }
@@ -90,11 +113,25 @@ section.first > div.containerProduct {
 
 section.first div.breadcrumb > * {
     display: inline-block;
+
+}
+
+@media only screen and (max-width: 599px) {
+    section.first div.breadcrumb > * {
+        text-align: center;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 599px) {
+    section.first div.breadcrumb > * {
+        text-align: center;
+        width: 50%;
+    }
 }
 
 section.first div.breadcrumb > div {
     float: left;
-    width: 30%;
+    width: 50%;
 }
 
     section.first div.breadcrumb > div > * {
