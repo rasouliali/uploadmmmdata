@@ -13,12 +13,18 @@
     left: 20px;
 }
 
-.btncontainerSubCategory button::after {
-    content: 'فیلتر'
+
+
+.btncontainerSubCategory button {
+    display:none;
 }
 
-.btncontainerSubCategory button.active::after {
-    content: '×'
+.btncontainerSubCategory button.active {
+    display:block;
+    color:white;
+}
+.bootstrap-select > .dropdown-toggle.bs-placeholder{
+    height:15px;
 }
 
 @font-face {
@@ -61,12 +67,14 @@
 @media only screen and (max-width: 599px) {
     .btncontainerSubCategory {
         position: fixed;
-        top: 165px;
+        bottom: 0;
         overflow: auto;
-        left: 0px;
+        left: 50%;
+        transform:translate(-50%,0);
         z-index: 100;
         background: white;
         font-size: larger;
+        z-index:1001;
     }
 
     .containerSubCategory > div {
