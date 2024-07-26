@@ -13,10 +13,12 @@
     left: 20px;
 }
 
-
+.containerProduct{
+    min-height:350px;
+}
 
 .btncontainerSubCategory button {
-    display:none;
+    display: none;
 }
 
 .btncontainerSubCategory button.active {
