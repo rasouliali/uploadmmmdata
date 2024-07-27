@@ -348,6 +348,7 @@ span.bgDarkerGrey.fa-lg:hover {
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
+    margin-left:5px;
 }
 
 .mobile {
