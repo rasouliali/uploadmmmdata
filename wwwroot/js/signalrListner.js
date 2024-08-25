@@ -186,7 +186,7 @@ mySignalRListener = new signalRListener();
 var firstRunFunction = true;
 var checkSignalrConnectivity = setInterval(function () {
     checkForRestartSignalR();
-}, 7000);
+}, 15000);
 
 function checkForRestartSignalR() {
     if (firstRunFunction == false) {
