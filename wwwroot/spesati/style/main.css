@@ -914,7 +914,9 @@ div#breadcrumb.admin-menu a {
 
 .mobile div.containerProduct {
     display: inline-block;
-    width: 93%;
+    width: 80%;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 div.containerProduct {
@@ -989,6 +991,9 @@ div.containerProduct {
         margin-right: -15px;
     }
 
+.mobile div.containerProduct > div > a > div {
+    max-height: 185px;
+}
     div.containerProduct > div > a > div {
         position: relative;
         width: 100%;
