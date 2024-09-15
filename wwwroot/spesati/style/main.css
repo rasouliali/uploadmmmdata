@@ -13,18 +13,18 @@
     left: 20px;
 }
 
-.containerProduct{
-    min-height:350px;
+.containerProduct {
+    min-height: 350px;
 }
 
 .btncontainerSubCategory button {
     display: none;
 }
 
-.btncontainerSubCategory button.active {
-    display:block;
-    color:white;
-}
+    .btncontainerSubCategory button.active {
+        display: block;
+        color: white;
+    }
 /*.bootstrap-select > .dropdown-toggle.bs-placeholder{
     height:15px;
 }*/
@@ -72,11 +72,11 @@
         bottom: 0;
         overflow: auto;
         left: 50%;
-        transform:translate(-50%,0);
+        transform: translate(-50%,0);
         z-index: 100;
         background: white;
         font-size: larger;
-        z-index:1001;
+        z-index: 1001;
     }
 
     .containerSubCategory > div {
@@ -202,9 +202,9 @@ ul#lightSlider > li > img {
 }
 
 header, section, footer {
-    width: 96%;
+    /*width: 96%;*/
     max-width: 1366px;
-    min-width: 320px;
+    /*min-width: 320px;*/
     margin: 0px auto;
     position: relative;
     overflow: hidden;
@@ -343,12 +343,13 @@ span.bgDarkerGrey.fa-lg:hover {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .bg-icon {
     height: 100%;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    margin-left:5px;
+    margin-left: 5px;
 }
 
 .mobile {
@@ -994,126 +995,127 @@ div.containerProduct {
 .mobile div.containerProduct > div > a > div {
     max-height: 185px;
 }
-    div.containerProduct > div > a > div {
-        position: relative;
-        width: 100%;
-        max-height: 200px;
-        height: 100%;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
 
-    div.containerProduct > div > a div p.bgRed {
-        transform: rotate(-20deg);
-        -webkit-transform: rotate(-20deg);
-        -moz-transform: rotate(-20deg);
-        -ms-transform: rotate(-20deg);
-        -o-transform: rotate(-20deg);
-        -webkit-backface-visibility: hidden;
-        font-size: 1em;
-        padding-right: 1em;
-        padding-left: .5em;
+div.containerProduct > div > a > div {
+    position: relative;
+    width: 100%;
+    max-height: 200px;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div.containerProduct > div > a div p.bgRed {
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -webkit-backface-visibility: hidden;
+    font-size: 1em;
+    padding-right: 1em;
+    padding-left: .5em;
+    position: absolute;
+    left: -1em;
+    top: -.2em;
+    text-transform: uppercase;
+}
+
+    div.containerProduct > div > a div p.bgRed::before {
+        content: "";
         position: absolute;
-        left: -1em;
-        top: -.2em;
-        text-transform: uppercase;
+        right: 0;
+        border-right: .7em solid #FFFFFF;
+        border-top: .75em solid #FF4D4D;
+        border-bottom: .75em solid #FF4D4D;
+        background-color: #FFFFFF;
     }
 
-        div.containerProduct > div > a div p.bgRed::before {
-            content: "";
-            position: absolute;
-            right: 0;
-            border-right: .7em solid #FFFFFF;
-            border-top: .75em solid #FF4D4D;
-            border-bottom: .75em solid #FF4D4D;
-            background-color: #FFFFFF;
-        }
+div.containerProduct > div > a div div.stickers {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
 
-    div.containerProduct > div > a div div.stickers {
-        width: 100%;
-        position: absolute;
-        bottom: 0;
+    div.containerProduct > div > a div div.stickers img {
+        margin-left: 2%;
+        width: 24%;
     }
 
-        div.containerProduct > div > a div div.stickers img {
-            margin-left: 2%;
-            width: 24%;
-        }
+div.containerProduct > div > a div div.hover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+}
 
-    div.containerProduct > div > a div div.hover {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        background-color: transparent;
-    }
+div.containerProduct > div:hover > a div div.hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
 
-    div.containerProduct > div:hover > a div div.hover {
-        background-color: rgba(255, 255, 255, 0.2);
-    }
+div.containerProduct > div.left > div h4 {
+    font-size: 0.8em;
+    height: 3.3em;
+    line-height: 1.1em;
+    margin-bottom: .5em;
+}
 
-    div.containerProduct > div.left > div h4 {
-        font-size: 0.8em;
-        height: 3.3em;
-        line-height: 1.1em;
-        margin-bottom: .5em;
-    }
+div.containerProduct > div > div h4:hover {
+    text-decoration: underline;
+}
 
-    div.containerProduct > div > div h4:hover {
-        text-decoration: underline;
-    }
+div.containerProduct > div > div h4 a {
+    color: #000000;
+}
 
-    div.containerProduct > div > div h4 a {
-        color: #000000;
-    }
+div.containerProduct > div > div p.description {
+    font-size: .7em;
+    line-height: 1em;
+    height: 1.6em;
+    margin-bottom: 1.5em;
+}
 
-    div.containerProduct > div > div p.description {
-        font-size: .7em;
-        line-height: 1em;
-        height: 1.6em;
-        margin-bottom: 1.5em;
-    }
+div.containerProduct > div > div p.offer {
+    width: 40%;
+    text-decoration: line-through;
+    font-size: .9em;
+}
 
-    div.containerProduct > div > div p.offer {
-        width: 40%;
-        text-decoration: line-through;
-        font-size: .9em;
-    }
+div.containerProduct > div > div p.price {
+    text-align: right;
+    width: 60%;
+    font-size: 1em;
+}
 
-    div.containerProduct > div > div p.price {
-        text-align: right;
-        width: 60%;
-        font-size: 1em;
-    }
+div.containerProduct > div > div p.unitPrice {
+    text-align: right;
+    width: 60%;
+    font-size: 0.7em;
+    line-height: 1.2em;
+}
 
-    div.containerProduct > div > div p.unitPrice {
-        text-align: right;
-        width: 60%;
-        font-size: 0.7em;
-        line-height: 1.2em;
-    }
+div.containerProduct > div > div > a.button {
+    width: 100%;
+    padding: 0.8em 0;
+}
 
-    div.containerProduct > div > div > a.button {
-        width: 100%;
-        padding: 0.8em 0;
-    }
+div.containerProduct > div > div span {
+    text-align: center;
+    float: left;
+    font-size: 0.9em;
+    cursor: pointer;
+}
 
-    div.containerProduct > div > div span {
-        text-align: center;
-        float: left;
-        font-size: 0.9em;
-        cursor: pointer;
-    }
-
-    div.containerProduct > div > div input {
-        width: 30%;
-        float: left;
-        font-size: 1em;
-        height: 1.7em;
-        margin: 0 7%;
-        text-align: center;
-    }
+div.containerProduct > div > div input {
+    width: 30%;
+    float: left;
+    font-size: 1em;
+    height: 1.7em;
+    margin: 0 7%;
+    text-align: center;
+}
 
 section.previewProducts > div.containerProduct > a.right > div h3 {
     font-size: 1.5em;
@@ -2329,8 +2331,10 @@ footer {
         }
 
             footer > div.left > a#logoFooter {
-                width: 70%;
+                /*width: 70%;*/
                 margin: 1em auto;
+                float: left;
+                width: 100%;
             }
 
             footer > div.left > div#social {
