@@ -1312,6 +1312,13 @@ form fieldset div.w-100 {
     width: 43% !important;
 }
 
+.w-40 {
+    width: 40% !important;
+}
+.w-92 {
+    width: 92% !important;
+}
+
 .d-none {
     display: none;
 }
