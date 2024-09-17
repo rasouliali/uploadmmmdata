@@ -757,7 +757,7 @@ function generateProductButtons(val) {
  * Generates button to add product to cart.
  */
 function generateAddProductButton() {
-    return '<a class="button bgRed white addToCart" href="#">' + addText + '</a>';
+    return '<a class="button bgRed white addToCart" href="#">افزودن به سبد</a>';
 }
 
 /*
