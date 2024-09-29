@@ -8,6 +8,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+.card-table, .card-table th, .card-table td {
+    border: 1px solid gray;
+    padding: 3px;
+}
 
 .smallmap {
     width: 100% !important;

@@ -36,7 +36,7 @@
             cartAllData.push(putUseridToCart);
 
             localStorage.setItem("allCart", cartAllData);
-            alertify.confirm('سبد ' + CartData + '؟', function (e) {
+            alertify.confirm('سبد ' + CartData, function (e) {
                 if (e) {
                     signalRListenerThis.InvokeProcess(InvokeSender.AcceptCart, uniqueId, 1, userId, connectionId)
                 }

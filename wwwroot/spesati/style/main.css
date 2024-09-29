@@ -3,6 +3,11 @@
  */
 
 /* Main layout */
+.card-table, .card-table th, .card-table td {
+    border: 1px solid gray;
+    padding: 3px;
+}
+
 .text-danger {
     color: red;
 }
