@@ -44,7 +44,7 @@ class signalRListener {
             CheckDuplicateInLockBlock(uniqueId).then(function (res) {
                 if (!res)
                     return;
-                ding.fastSeek(0);
+                //ding.fastSeek(0);
                 ding.play();
                 mySignalRListener.RecieveAcceptCartInCustomerFn();
             });

@@ -34,7 +34,7 @@ function OnPaymentStatusCompeleteFn() {
 }
 function RecieveCartInStoreManagerFn(uniqueId, userId, connectionId, CartData, fazid, Address, LatLon, cartStr) {
 
-    ring.fastSeek(0);
+    //ring.fastSeek(0);
     ring.play();
     var jsonCart = JSON.parse(cartStr);
     var putUseridToCart = {};
