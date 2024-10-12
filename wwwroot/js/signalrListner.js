@@ -3,9 +3,16 @@ var signalRListenerThis;
 var beforeCallId = "";
 var isCaller = false;
 
-var ring = document.getElementById('ring');
-var ding = document.getElementById('ding');
-
+var ring; 
+var ding; 
+function getAudios() {
+    try {
+        ring = document.getElementById('iframeData').contentWindow.document.getElementById('ring');
+        ding = document.getElementById('iframeData').contentWindow.document.getElementById('ding');
+    } catch (e) {
+        setTimeout(function () { getAudios(); }, 300);
+    }
+}
 class signalRListener {
     constructor() {
         signalRListenerThis = this;
