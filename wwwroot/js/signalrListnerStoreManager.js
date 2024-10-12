@@ -1,4 +1,8 @@
 ﻿function setListenerToSignalR() {
+    if (!mySignalRListener.wsconn) {
+        setTimeout(function () { setListenerToSignalR() }, 300);
+        return;
+    }
 
     mySignalRListener.wsconn.on('RecieveAcceptAnother', (uniqueId) => {
         CheckDuplicateInLockBlock(uniqueId).then(function (res) {
