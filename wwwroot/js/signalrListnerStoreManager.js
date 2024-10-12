@@ -1,5 +1,46 @@
-﻿function setListenerToSignalR() {
-    if (!mySignalRListener.wsconn) {
+﻿//const dingaudiofile = new Audio('/dingsound.mp3');
+//dingaudiofile.muted = true;
+//$('body').append(`<div class="alert-for-audio">
+//  <p>آیا اجازه پخش آلارم را میدهید؟</p>
+//  <p class="buttons">
+//    <button value="0">خیر</button>
+//    <button value="1">بله</button>
+//  </p>
+//</div>`);
+
+//const alert_elem = document.querySelector('.alert-for-audio');
+
+//dingaudiofile.play().then(() => {
+//    // already allowed
+//    alert_elem.remove();
+//    resetAudio();
+//})
+//    .catch(() => {
+//        // need user interaction
+//        alert_elem.addEventListener('click', ({ target }) => {
+//            if (target.matches('button')) {
+//                const allowed = target.value === "1";
+//                if (allowed) {
+//                    dingaudiofile.play()
+//                        .then(resetAudio);
+//                }
+//                alert_elem.remove();
+//            }
+//        });
+//    });
+//function resetAudio() {
+//    dingaudiofile.pause();
+//    dingaudiofile.currentTime = 0;
+//    dingaudiofile.muted = false;
+//}
+
+function setListenerToSignalR() {
+    try {
+        if (!mySignalRListener || !mySignalRListener.wsconn) {
+            setTimeout(function () { setListenerToSignalR() }, 300);
+            return;
+        }
+    } catch (e) {
         setTimeout(function () { setListenerToSignalR() }, 300);
         return;
     }

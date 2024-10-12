@@ -3,17 +3,10 @@ var signalRListenerThis;
 var beforeCallId = "";
 var isCaller = false;
 
-var ring; 
-var ding; 
-function getAudios() {
-    try {
-        ring = document.getElementById('iframeData').contentWindow.document.getElementById('ring');
-        ding = document.getElementById('iframeData').contentWindow.document.getElementById('ding');
-    } catch (e) {
-        setTimeout(function () { getAudios(); }, 300);
-    }
-}
-getAudios();
+var ring = document.getElementById('ring'); 
+var ding = document.getElementById('ding'); 
+
+
 class signalRListener {
     constructor() {
         signalRListenerThis = this;
@@ -171,6 +164,24 @@ class signalRListener {
 
 
 }
+
+//getAudios();
+//function getSpeaekrPermission() {
+//    // Permissions must be requested from inside a user gesture, like a button's
+//    // click handler.
+//    chrome.permissions.request({
+//        permissions: ['Sound'],
+//        origins: ['https://pardisap.ir/']
+//    }, (granted) => {
+//        // The callback argument will be true if the user granted the permissions.
+//        //if (granted) {
+//        //    doSomething();
+//        //} else {
+//        //    doSomethingElse();
+//        //}
+//    });
+//}
+//getSpeaekrPermission();
 var myDubList = [];
 async function CheckDuplicateInLockBlock(guid) {
     try {
