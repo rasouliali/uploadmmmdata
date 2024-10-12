@@ -2,6 +2,13 @@
 var signalRListenerThis;
 var beforeCallId = "";
 var isCaller = false;
+
+var ring = new Audio('/ringsound.mp3');
+ring.loop = false;
+
+var ding = new Audio('/dingsound.mp3');
+ding.loop = false;
+
 class signalRListener {
     constructor() {
         signalRListenerThis = this;
@@ -37,7 +44,9 @@ class signalRListener {
             CheckDuplicateInLockBlock(uniqueId).then(function (res) {
                 if (!res)
                     return;
-                window.location.href = "/payment";
+                ding.fastSeek(0);
+                ding.play();
+                mySignalRListener.RecieveAcceptCartInCustomerFn();
             });
         });
 
@@ -45,19 +54,30 @@ class signalRListener {
             CheckDuplicateInLockBlock(uniqueId).then(function (res) {
                 if (!res)
                     return;
-                alertify.confirm('یافت نشد', 'در آدرس انتخابی شما فروشگاه آنلاینی یافت نشد!',
-                    function () {//ok button clicked
-                        window.location.href = "/adress";
-                    }
-                    , function () {//cancel button clicked
-                        window.location.reload();
-                    }).set({
-                        'closable': false,
-                        'labels': { ok: 'تغییر آدرس', cancel: 'دوباره جست و جو کن' }
-                    });
+                mySignalRListener.NotFoundOnlineStoreFn();
             });
         });
 
+    }
+
+    RecieveAcceptCartInCustomerFn() {
+        ding.play();
+        ding.loop = false;
+
+        window.location.href = "/payment";
+    }
+
+    NotFoundOnlineStoreFn() {
+        alertify.confirm('یافت نشد', 'در آدرس انتخابی شما فروشگاه آنلاینی یافت نشد!',
+            function () {//ok button clicked
+                window.location.href = "/adress";
+            }
+            , function () {//cancel button clicked
+                window.location.reload();
+            }).set({
+                'closable': false,
+                'labels': { ok: 'تغییر آدرس', cancel: 'دوباره جست و جو کن' }
+            });
     }
 
     initializeSignalR() {
