@@ -13,6 +13,7 @@ function getAudios() {
         setTimeout(function () { getAudios(); }, 300);
     }
 }
+getAudios();
 class signalRListener {
     constructor() {
         signalRListenerThis = this;
