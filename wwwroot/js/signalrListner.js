@@ -3,13 +3,8 @@ var signalRListenerThis;
 var beforeCallId = "";
 var isCaller = false;
 
-var ring = new Audio('/ringsound.mp3');
-ring.setAttribute("allow", "autoplay")
-ring.loop = false;
-
-var ding = new Audio('/dingsound.mp3');
-ding.setAttribute("allow", "autoplay");
-ding.loop = false;
+var ring = document.getElementById('ring');
+var ding = document.getElementById('ding');
 
 class signalRListener {
     constructor() {
